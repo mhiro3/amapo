@@ -1,0 +1,28 @@
+name: puroject1
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 使用API
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.3
+  video_player: ^2.9.3
+  image_picker: ^1.1.2
+  geolocator: ^14.0.2
+  adaptive_dialog: ^2.4.2
+  google_maps_flutter: ^2.12.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
