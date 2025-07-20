@@ -57,7 +57,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     if (!file.existsSync()) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('選択された画像が存在しません')),
+        const SnackBar(content: Text('存在しません')),
       );
       return;
     }
@@ -81,7 +81,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     if (!file.existsSync()) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('背景画像が見つかりません')),
+        const SnackBar(content: Text('見つかりません')),
       );
       return;
     }
@@ -105,7 +105,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     if (!file.existsSync()) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('アイコン画像が見つかりません')),
+        const SnackBar(content: Text('見つかりません')),
       );
       return;
     }
