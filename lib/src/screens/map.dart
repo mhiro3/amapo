@@ -10,6 +10,7 @@ class MapScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Google Maps',
+      debugShowCheckedModeBanner: false, // ここでリボンを非表示にします
       home: MapSample(),
     );
   }
