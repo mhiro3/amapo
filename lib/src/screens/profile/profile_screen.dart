@@ -134,7 +134,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final limitedImages = favoriteImages.take(12).toList();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('プロフィール（改良版）')),
+      appBar: AppBar(title: const Text('プロフィール')),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
