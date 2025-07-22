@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -10,7 +11,7 @@ class MapScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Google Maps',
-      debugShowCheckedModeBanner: false, // ここでリボンを非表示にします
+       debugShowCheckedModeBanner: false, // ここでリボンを非表示にします
       home: MapSample(),
     );
   }

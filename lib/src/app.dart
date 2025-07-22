@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+       debugShowCheckedModeBanner: false, // ここでリボンを非表示にします
       // NavigaionBarのClassを呼び出す
       home: const BottomNavigation(),
     );

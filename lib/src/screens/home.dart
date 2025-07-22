@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:puroject1/src/screens/mise.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  Widget buildSection(String title, List<String> stores) {
+  Widget buildSection(String title, List<String> stores, BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(8),
       padding: const EdgeInsets.all(8),
@@ -32,7 +33,10 @@ class HomePage extends StatelessWidget {
               child: ListTile(
                 title: Text(store),
                 onTap: () {
-                  // 任意のアクション（ナビゲーションなど）
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MiseScreen()),
+                  );
                 },
               ),
             ),
@@ -46,7 +50,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('映え菓子'),
+        title: const Text('甘歩'),
         centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
@@ -54,8 +58,8 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            buildSection('おすすめ洋菓子店', ['お店 1', 'お店 2']),
-            buildSection('おすすめ和菓子店', ['お店 1', 'お店 2']),
+            buildSection('おすすめ洋菓子店', ['お店 1', 'お店 2'], context),
+            buildSection('おすすめ和菓子店', ['お店 1', 'お店 2'], context),
           ],
         ),
       ),
